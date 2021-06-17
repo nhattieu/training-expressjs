@@ -10,15 +10,15 @@ const routes = require('./routes');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(
   '/css',
-  express.static(path.join(__dirname, '../node_modules/bootstrap/dist/css'))
+  express.static(path.join(__dirname, '../node_modules/bootstrap/dist/css')),
 );
 app.use(
   '/js',
-  express.static(path.join(__dirname, '../node_modules/bootstrap/dist/js'))
+  express.static(path.join(__dirname, '../node_modules/bootstrap/dist/js')),
 );
 app.use(
   '/js',
-  express.static(path.join(__dirname, '../node_modules/jquery/dist'))
+  express.static(path.join(__dirname, '../node_modules/jquery/dist')),
 );
 
 // Middleware
@@ -26,7 +26,7 @@ app.use(
 app.use(
   express.urlencoded({
     extended: true,
-  })
+  }),
 );
 // Javascript
 app.use(express.json());
@@ -40,7 +40,7 @@ app.engine(
   handlebars({
     extname: '.hbs',
     defaultLayout: 'global',
-  })
+  }),
 );
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
