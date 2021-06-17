@@ -57,3 +57,11 @@ Project
 |-- package-lock.json
 |-- package.json
 |-- README.md
+
+
+
+
+
+prettier - làm đẹp code
+lint-staged - chạy script sau khi git add
+husky - lắng nghe hành động git và thực thi các script
