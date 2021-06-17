@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/nhattieu/training-expressjs#readme",
   "lint-staged": {
-    "./src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 2 --write"
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 2 --write"
   },
   "dependencies": {
     "bootstrap": "^5.0.1",
