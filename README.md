@@ -65,3 +65,7 @@ Project
 prettier - làm đẹp code
 lint-staged - chạy script sau khi git add
 husky - lắng nghe hành động git và thực thi các script
+
+npm install husky --save-dev
+npx husky install
+npx husky add .husky/pre-commit
