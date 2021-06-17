@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "prepare": "husky install",
+    "format": "lint-staged",
     "start": "nodemon --inspect src/index.js",
     "watch": "node-sass --watch src/resources/scss --output src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +25,9 @@
     "url": "https://github.com/nhattieu/training-expressjs/issues"
   },
   "homepage": "https://github.com/nhattieu/training-expressjs#readme",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 2 --write "
+  },
   "dependencies": {
     "bootstrap": "^5.0.1",
     "express": "^4.17.1",
