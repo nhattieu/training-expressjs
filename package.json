@@ -24,10 +24,6 @@
     "url": "https://github.com/nhattieu/training-expressjs/issues"
   },
   "homepage": "https://github.com/nhattieu/training-expressjs#readme",
-  "lint-staged": {
-    "*.js": "prettier --write"
-    
-  },
   "dependencies": {
     "bootstrap": "^5.0.1",
     "express": "^4.17.1",
